@@ -1,0 +1,12 @@
+set -e
+
+echo "LINTING STAGED FILES"
+npx lint-staged
+
+echo "TYPE CHECKING"
+npx tsc --build --noEmit || exit 1
+
+echo "RUNNING TESTS"
+npx jest --passWithNoTests || exit 1
+
+echo "✅ALL CHECKS PASSED"

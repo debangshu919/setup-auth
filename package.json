@@ -22,10 +22,18 @@
 	"scripts": {
 		"lint": "biome lint .",
 		"format": "biome format --write .",
-		"prepare": "husky"
+		"prepare": "husky",
+		"type-check": "tsc --noEmit",
+		"test": "jest",
+		"test:ci": "jest --passWithNoTests",
+		"commit": "cz"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.3.10",
+		"@commitlint/cli": "^20.2.0",
+		"@commitlint/config-conventional": "^20.2.0",
+		"commitizen": "^4.3.1",
+		"cz-conventional-changelog": "^3.3.0",
 		"husky": "^9.1.7",
 		"jest": "^30.2.0",
 		"lint-staged": "^16.2.7",
@@ -36,5 +44,10 @@
 			"npm run format",
 			"npm run lint"
 		]
+	},
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
 	}
 }
