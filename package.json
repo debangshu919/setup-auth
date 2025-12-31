@@ -29,7 +29,7 @@
 		"dev": "tsx src/index.ts",
 		"build": "tsup src/index.ts --format esm --dts --clean",
 		"lint": "biome lint .",
-		"format": "biome format --write .",
+		"format": "biome check . --write --unsafe",
 		"prepare": "husky",
 		"type-check": "tsc --noEmit",
 		"test": "jest",
