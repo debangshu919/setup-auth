@@ -1,5 +1,5 @@
 {
-	"name": "setup-auth",
+	"name": "authzey",
 	"version": "1.0.0",
 	"description": "CLI tool to setup authentication in Next.js using pluggable auth providers.",
 	"keywords": [
@@ -7,20 +7,20 @@
 		"nextjs",
 		"bootstrapper"
 	],
-	"homepage": "https://github.com/debangshu919/setup-auth#readme",
+	"homepage": "https://github.com/debangshu919/authzey#readme",
 	"bugs": {
-		"url": "https://github.com/debangshu919/setup-auth/issues"
+		"url": "https://github.com/debangshu919/authzey/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/debangshu919/setup-auth.git"
+		"url": "git+https://github.com/debangshu919/authzey.git"
 	},
 	"license": "MIT",
 	"author": "Debangshu",
 	"type": "module",
 	"main": "dist/index.js",
 	"bin": {
-		"setup-auth": "./dist/index.js"
+		"authzey": "./dist/index.js"
 	},
 	"engines": {
 		"node": ">=18"

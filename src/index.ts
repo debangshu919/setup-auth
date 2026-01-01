@@ -7,10 +7,10 @@ import { PROVIDERS } from "./core/registry.js";
 import { runProvider } from "./core/runner.js";
 import { log } from "./utils/log.js";
 
-const cli = cac("setup-auth");
+const cli = cac("authzey");
 
 cli.command("", "Setup authentication for your project").action(async () => {
-	log.info("\n🔐 setup-auth\n");
+	log.info("\n🔐 authzey\n");
 
 	const ctx = await getProjectContext();
 
