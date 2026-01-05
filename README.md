@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/debangshu919/authzey" target="_blank"><img src="https://raw.githubusercontent.com/debangshu919/authzey/refs/heads/main/docs/assets/authzey-logo.svg" alt="Authzey Logo" width="500px"/></a>
+  <a href="https://github.com/debangshu919/authzey" target="_blank"><img src="https://github.com/debangshu919/authzey/blob/main/docs/assets/authzey-logo.svg" alt="Authzey Logo" width="500px"/></a>
 </p>
 
 <div align="center">
