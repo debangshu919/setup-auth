@@ -1,6 +1,6 @@
 {
 	"name": "authzey",
-	"version": "1.0.0",
+	"version": "0.1.0",
 	"description": "CLI tool to setup authentication in Next.js using pluggable auth providers.",
 	"keywords": [
 		"authentication",
