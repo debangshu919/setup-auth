@@ -1,6 +1,6 @@
 import path from "node:path";
 import type { DatabaseType, ProjectContext } from "../../../cli/context.js";
-import { runCommand } from "../../../utils/cmd.js";
+import { runCommandWithSpinner } from "../../../utils/cmd.js";
 import { addEnvVars } from "../../../utils/env.js";
 import { writeFileSafe } from "../../../utils/fs.js";
 import { installDevPackages, installPackages } from "../../../utils/pkg.js";
@@ -37,7 +37,11 @@ export async function setupDrizzle(ctx: ProjectContext) {
 	writeFileSafe(path.join(process.cwd(), "lib", "auth.ts"), minimalAuthTemplate);
 
 	// Step 2: Generate auth schema - await the command and output to lib/auth-schema.ts
-	await runCommand("npx", ["@better-auth/cli", "generate", "--output", "./lib/auth-schema.ts", "-y"]);
+	await runCommandWithSpinner(
+		"npx",
+		["@better-auth/cli", "generate", "--output", "./lib/auth-schema.ts", "-y"],
+		"Generating auth schema...",
+	);
 
 	// Step 3: Now write the full auth.ts WITH schema import
 	const fullAuthTemplate = renderOAuthProviders(
