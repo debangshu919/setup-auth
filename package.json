@@ -3,9 +3,13 @@
 	"version": "0.1.0",
 	"description": "CLI tool to setup authentication in Next.js using pluggable auth providers.",
 	"keywords": [
+		"auth",
 		"authentication",
 		"nextjs",
-		"bootstrapper"
+		"cli",
+		"scaffold",
+		"starter",
+		"better-auth"
 	],
 	"homepage": "https://github.com/debangshu919/authzey#readme",
 	"bugs": {
@@ -22,9 +26,15 @@
 	"bin": {
 		"authzey": "./dist/index.js"
 	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"engines": {
 		"node": ">=18"
 	},
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"dev": "tsx src/index.ts",
 		"build": "tsup src/index.ts --format esm --dts --clean",
