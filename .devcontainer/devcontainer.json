@@ -6,13 +6,7 @@
 	},
 	"customizations": {
 		"vscode": {
-			"extensions": [
-				"biomejs.biome",
-				"orta.vscode-jest",
-				"usernamehw.errorlens",
-				"eamodio.gitlens",
-				"github.copilot"
-			],
+			"extensions": ["biomejs.biome", "orta.vscode-jest", "usernamehw.errorlens", "eamodio.gitlens", "github.copilot"],
 			"settings": {
 				"editor.formatOnSave": true,
 				"editor.defaultFormatter": "biomejs.biome",
